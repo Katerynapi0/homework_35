@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Форма для реєстрації</h1>
+
+    <form id="registrationForm">
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Призвіще:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="birthdate">Дата народження:</label>
+        <input type="text" id="birthday" name="birthday"><br>
+
+        <label for="gender">Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="чоловік">
+        <label for="male">Чоловіча</label><br>
+        <input type="radio" id="female" name="gender" value="жінка">
+        <label for="female">Жіноча</label><br><br>
+
+        <label for="city">Місто:</label>
+        <select name="city" id="city">
+            <option value="Київ">Київ</option>
+            <option value="Львів">Львів</option>
+            <option value="Дніпро">Дніпро</option>
+            <option value="Харків">Харків</option>
+        </select><br><br>
+
+        <label for="address">Адреса:</label><br>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea><br><br>
+
+        <label for="languages">Мови, якими володіє:</label><br>
+        <input type="checkbox" id="english" name="languages" value="Англійська">
+        <label for="english">Англійська</label><br>
+        <input type="checkbox" id="ukrainian" name="languages" value="Українська">
+        <label for="ukrainian">Українська</label><br><br>
+
+        <button type="button" onclick="displayData()">Зберегти</button>
+    </form>
+
+    <div id="userData"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
